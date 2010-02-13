@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="wgbh:MediaMetadataImpl"
+xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Concept Service Deployment"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2008-08-07T20:53:20.152Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-02-11T18:07:18.434Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="RDF Statements about this object" CREATED="2009-05-04T18:58:46.339Z" MIMETYPE="application/rdf+xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="1407">
+<foxml:xmlContent>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/wgbh:MediaMetadataImpl">
+    <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"></hasModel>
+    <isDeploymentOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/sdef:METADATA"></isDeploymentOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:CONCEPT"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:VIDEO"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:AUDIO"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:IMAGE"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:DOCUMENT"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:RESOURCE"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:COLLECTION"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:PROGRAM"></isContractorOf>
+  </rdf:Description>
+</rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2008-08-07T20:53:20.152Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="456">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Metadata Service Deployment</dc:title>
+  <dc:identifier>wgbh:LogMetadataImpl</dc:identifier>
+  <dc:identifier>wgbh:MediaMetadataImpl</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DSINPUTSPEC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="DSINPUTSPEC.7" LABEL="Datastream Input Specification" CREATED="2009-01-27T18:41:43.181Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSInputSpec-1.0" SIZE="949">
+<foxml:xmlContent>
+<fbs:DSInputSpec xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec" bDefPID="sdef:METADATA" label="Datastream Input Specification for Concept">
+  <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="PBCore">
+    <fbs:DSInputLabel>PBCore</fbs:DSInputLabel>
+    <fbs:DSMIME>text/xml</fbs:DSMIME>
+    <fbs:DSInputInstruction>PBCore XML document</fbs:DSInputInstruction>
+  </fbs:DSInput>
+  <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="DC">
+    <fbs:DSInputLabel>DC</fbs:DSInputLabel>
+    <fbs:DSMIME>text/xml</fbs:DSMIME>
+    <fbs:DSInputInstruction>Dublin Core XML document</fbs:DSInputInstruction>
+  </fbs:DSInput>
+  <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="RELS-EXT">
+    <fbs:DSInputLabel>RELS-EXT</fbs:DSInputLabel>
+    <fbs:DSMIME>text/xml</fbs:DSMIME>
+    <fbs:DSInputInstruction>RELS-EXT XML document</fbs:DSInputInstruction>
+  </fbs:DSInput>
+</fbs:DSInputSpec>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="METHODMAP" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="METHODMAP.14" LABEL="Deployment Method Map" CREATED="2009-07-29T18:39:58.654Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDepMethodMap-1.0" SIZE="2578">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" bDefPID="sdef:METADATA" name="MethodMap - CONCEPT">
+  <fmm:Method operationLabel="Get PBCore" operationName="PBCore" wsdlMsgName="getPBCore" wsdlMsgOutput="dissemResponse">
+    <fmm:DatastreamInputParm parmName="RELS-EXT" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get DC" operationName="DC" wsdlMsgName="getDC" wsdlMsgOutput="dissemResponse">
+    <fmm:DatastreamInputParm parmName="DC" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Parent" operationName="Parent" wsdlMsgName="getParent" wsdlMsgOutput="dissemResponse">
+    <fmm:DatastreamInputParm parmName="RELS-EXT" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Raw PBCore" operationName="RawPBCore" wsdlMsgName="getRawPBCore" wsdlMsgOutput="dissemResponse">
+    <fmm:DatastreamInputParm parmName="PBCore" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Raw DC" operationName="RawDC" wsdlMsgName="getRawDC" wsdlMsgOutput="dissemResponse">
+    <fmm:DatastreamInputParm parmName="DC" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Rights" operationName="Rights" wsdlMsgName="getRights" wsdlMsgOutput="dissemResponse">
+    <fmm:DatastreamInputParm parmName="Rights" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"></fmm:MethodReturnType>
+  </fmm:Method>
+  <fmm:Method operationLabel="To Solr XML" operationName="SolrXML" wsdlMsgName="getSolrXML" wsdlMsgOutput="dissemResponse">
+    <fmm:DatastreamInputParm parmName="RELS-EXT" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="text/xml"></fmm:MethodReturnType>
+  </fmm:Method>
+</fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="to_solr.xsl" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+
+<foxml:datastreamVersion ID="to_solr.xsl.0" LABEL="" CREATED="2010-02-11T18:07:18.434Z" MIMETYPE="text/xml">
+<foxml:xmlContent>
+<xsl:stylesheet version="1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:dcterms="http://purl.org/dc/terms/" xmlns:fedora-model="info:fedora/fedora-system:def/model#"
+  xmlns:fedora-rels-ext="info:fedora/fedora-system:def/relations-external#"
+  xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/dc/"
+  xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sparql="http://www.w3.org/2001/sw/DataAccess/rf1/result"
+  xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="xml" omit-xml-declaration="yes"/>
+  <xsl:key match="//tei:term" name="teiRef" use="@xml:id"/>
+  <xsl:key match="//tei:name" name="teiUniq" use="@ref"/>
+  <xsl:key match="//sparql:pid" name="key_unique_children" use="@uri"/>
+  <xsl:template match="rdf:RDF">
+    <xsl:variable name="pid" select="substring-after(rdf:Description/@rdf:about, '/')"/>
+    <xsl:variable name="dc" select="document(concat('http://localhost:8180/fedora/get/', $pid, '/DC'))"/>
+    <xsl:variable name="pbcore" select="document(concat('http://localhost:8180/fedora/get/', $pid, '/PBCore'))"/>
+    <xsl:variable name="ri_children" select="document(concat('http://localhost:8180/fedora/risearch?dt=on&amp;format=Sparql&amp;lang=itql&amp;limit=1000&amp;type=tuples&amp;query=select+%24pid+%24cmodel+from+%3C%23ri%3E+where+%24pid+%3Cinfo%3Afedora%2Ffedora-system%3Adef%2Frelations-external%23isPartOf%3E+%3Cinfo%3Afedora%2F', $pid, '%3E+and+%24pid+%3Cinfo%3Afedora%2Ffedora-system%3Adef%2Fmodel%23hasModel%3E+%24cmodel'))"/>
+    <xsl:variable name="ri_ancestor" select="document(concat('http://localhost:8180/fedora/risearch?dt=on&amp;format=Sparql&amp;lang=itql&amp;limit=1000&amp;type=tuples&amp;query=select+%24pid+from+%3C%23ri%3E+where+%3Cinfo%3Afedora%2F', $pid, '%3E+%3Cinfo%3Afedora%2Ffedora-system%3Adef%2Frelations-external%23isMemberOfCollection%3E+%24pid'))"/>
+    <add>
+      <doc>
+        <field name="id">
+          <xsl:value-of select="$pid"/>
+        </field>
+        <xsl:apply-templates mode="dc_t" select="$dc//dc:title[1]"/>
+        <xsl:apply-templates mode="dc" select="$dc//dc:*"/>
+        <field name="dc.title_sort">
+          <xsl:apply-templates mode="sort" select="$dc//dc:title[1]">
+            <xsl:sort select="."/>
+          </xsl:apply-templates>
+        </field>
+        <field name="dc.contributor_sort">
+          <xsl:apply-templates mode="sort" select="$dc//dc:contributor">
+            <xsl:sort select="."/>
+          </xsl:apply-templates>
+        </field>
+        <field name="dc.coverage.PlaceName_sort">
+          <xsl:apply-templates mode="sort" select="$dc//dc:coverage.PlaceName">
+            <xsl:sort select="."/>
+          </xsl:apply-templates>
+        </field>
+        <field name="dc.date_sort">
+          <xsl:apply-templates mode="sort" select="$dc//dc:date">
+            <xsl:sort select="."/>
+          </xsl:apply-templates>
+        </field>
+        <field name="dc.type_sort">
+          <xsl:apply-templates mode="sort" select="$dc//dc:type">
+            <xsl:sort select="."/>
+          </xsl:apply-templates>
+        </field>
+        <xsl:apply-templates select="$pbcore/pbcore:PBCoreDescriptionDocument"/>
+        <xsl:apply-templates select="//fedora-rels-ext:isPartOf"/>
+        <xsl:apply-templates mode="children" select="$ri_children/sparql:sparql"/>
+        <xsl:apply-templates mode="ancestor" select="$ri_ancestor/sparql:sparql"/>
+        <xsl:apply-templates select="//fedora-rels-ext:hasDescription"/>
+        <xsl:apply-templates select="//fedora-model:hasModel"/>
+      </doc>
+    </add>
+  </xsl:template>
+  <xsl:template match="sparql:sparql" mode="ancestor">
+    <xsl:apply-templates mode="ancestor" select="sparql:results/sparql:result"/>
+  </xsl:template>
+  <xsl:template match="sparql:result" mode="ancestor">
+    <field name="rdf.isMemberOfCollection">
+      <xsl:value-of select="substring-after(sparql:pid/@uri, '/')"/>
+    </field>
+    <xsl:variable name="ri_ancestor" select="document(concat('http://localhost:8180/fedora/risearch?dt=on&amp;format=Sparql&amp;lang=itql&amp;limit=1000&amp;type=tuples&amp;query=select+%24pid+from+%3C%23ri%3E+where+%3Cinfo%3Afedora%2F', substring-after(sparql:pid/@uri, '/'), '%3E+%3Cinfo%3Afedora%2Ffedora-system%3Adef%2Frelations-external%23isMemberOfCollection%3E+%24pid'))"/>
+    <xsl:apply-templates mode="ancestor" select="$ri_ancestor/sparql:sparql"/>
+  </xsl:template>
+  <xsl:template match="sparql:sparql" mode="children">
+    <xsl:apply-templates mode="children" select="sparql:results/sparql:result"/>
+  </xsl:template>
+  <xsl:template match="sparql:result" mode="children">
+    <xsl:if test="generate-id(sparql:pid) = generate-id(key('key_unique_children', sparql:pid/@uri)[1])">
+      <field name="rdf.hasPart">
+        <xsl:value-of select="substring-after(sparql:pid/@uri, '/')"/>
+      </field>
+      <xsl:for-each select="key('key_unique_children', sparql:pid/@uri)">
+        <field name="fedora.contentModel">
+          <xsl:value-of select="parent::*/sparql:cmodel/@uri"/>
+        </field>
+        <xsl:choose>
+          <xsl:when test="parent::*/sparql:cmodel/@uri = 'info:fedora/wgbh:LOG'">
+            <xsl:variable name="pid" select="substring-after(@uri, '/')"/>
+            <xsl:variable name="tei" select="document(concat('http://localhost:8180/fedora/get/', $pid, '/File'))"/>
+            <xsl:apply-templates select="$tei//tei:TEI"/>
+          </xsl:when>
+        </xsl:choose>
+      </xsl:for-each>
+      <xsl:variable name="ri_children2" select="document(concat('http://localhost:8180/fedora/risearch?dt=on&amp;format=Sparql&amp;lang=itql&amp;limit=1000&amp;type=tuples&amp;query=select+%24pid+%24cmodel+from+%3C%23ri%3E+where+%24pid+%3Cinfo%3Afedora%2Ffedora-system%3Adef%2Frelations-external%23isPartOf%3E+%3Cinfo%3Afedora%2F', substring-after(sparql:pid/@uri, '/'), '%3E+and+%24pid+%3Cinfo%3Afedora%2Ffedora-system%3Adef%2Fmodel%23hasModel%3E+%24cmodel'))"/>
+      <xsl:apply-templates mode="children" select="$ri_children2/sparql:sparql"/>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template match="//fedora-model:hasModel">
+    <field>
+      <xsl:attribute name="name">fedora.model</xsl:attribute>
+      <xsl:value-of select="@rdf:resource"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//fedora-rels-ext:hasDescription">
+    <xsl:variable name="pid" select="substring-after(@rdf:resource, '/')"/>
+    <xsl:variable name="tei" select="document(concat('http://localhost:8180/fedora/get/', $pid, '/File'))"/>
+    <xsl:apply-templates select="$tei//tei:TEI"/>
+    <field name="fedora.contentModel">info:fedora/wgbh:LOG</field>
+  </xsl:template>
+  <xsl:template match="oai_dc:dc">
+    <xsl:apply-templates mode="dc" select="descendant::dc:title[1]"/>
+    <xsl:apply-templates mode="dc"/>
+  </xsl:template>
+  <xsl:template match="dc:title" mode="dc_t">
+    <field>
+      <xsl:attribute name="name">
+        <xsl:value-of select="translate(name(), ':', '.')"/>
+      </xsl:attribute>
+      <xsl:value-of select="."/>
+    </field>
+  </xsl:template>
+  <xsl:template match="*" mode="dc">
+    <xsl:if test="not(name() = 'dc:title')">
+      <field>
+        <xsl:attribute name="name">
+          <xsl:value-of select="translate(name(), ':', '.')"/>
+        </xsl:attribute>
+        <xsl:value-of select="."/>
+      </field>
+    </xsl:if>
+  </xsl:template>
+  <xsl:template match="*" mode="sort">
+    <xsl:value-of select="."/>
+  </xsl:template>
+  <xsl:template match="dc:subject" mode="dc">
+    <xsl:call-template name="output-tokens">
+      <xsl:with-param name="list">
+        <xsl:value-of select="."/>
+      </xsl:with-param>
+      <xsl:with-param name="delimiter">--</xsl:with-param>
+      <xsl:with-param name="name">
+        <xsl:value-of select="translate(name(), ':', '.')"/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
+  <xsl:template match="pbcore:PBCoreDescriptionDocument">
+    <xsl:apply-templates/>
+    <xsl:apply-templates mode="ft" select="."/>
+  </xsl:template>
+  <xsl:template match="*" mode="ft">  
+  <field name="pbcore.title_Full">
+      <xsl:if test="//pbcore:pbcoreTitle[pbcore:titleType='Series'] and //pbcore:pbcoreTitle[pbcore:titleType='Program']">
+        <xsl:value-of select="//pbcore:pbcoreTitle[pbcore:titleType='Series']/pbcore:title"/> / <xsl:value-of select="//pbcore:pbcoreTitle[pbcore:titleType='Program']/pbcore:title"/>
+      </xsl:if>
+      <xsl:if test="//pbcore:pbcoreTitle[pbcore:titleType='Series'] and not(//pbcore:pbcoreTitle[pbcore:titleType='Program'])">
+        <xsl:value-of select="//pbcore:pbcoreTitle[pbcore:titleType='Series']/pbcore:title"/>
+      </xsl:if>
+      <xsl:if test="not(//pbcore:pbcoreTitle[pbcore:titleType='Series']) and //pbcore:pbcoreTitle[pbcore:titleType='Program']">
+        <xsl:value-of select="//pbcore:pbcoreTitle[pbcore:titleType='Program']/pbcore:title"/>
+      </xsl:if>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreIdentifier">
+    <field>
+      <xsl:attribute name="name">pbcore.identifier</xsl:attribute>
+      <xsl:value-of select="pbcore:identifier"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreTitle">
+    <field>
+      <xsl:attribute name="name">pbcore.title_<xsl:value-of select="translate(pbcore:titleType, ' ', '_')"/>
+      </xsl:attribute>
+      <xsl:value-of select="pbcore:title"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreSubject">
+    <field>
+      <xsl:attribute name="name">pbcore.subject</xsl:attribute>
+      <xsl:value-of select="pbcore:subject"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreDescription">
+    <field>
+      <xsl:attribute name="name">pbcore.description_<xsl:value-of select="translate(pbcore:descriptionType, ' ', '_')"/>
+      </xsl:attribute>
+      <xsl:value-of select="pbcore:description"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreGenre"/>
+  <xsl:template match="//pbcore:pbcoreRelation"/>
+  <xsl:template match="//pbcore:pbcoreCoverage">
+    <field>
+      <xsl:attribute name="name">pbcore.coverage_<xsl:value-of select="pbcore:coverageType"/>
+      </xsl:attribute>
+      <xsl:value-of select="pbcore:coverage"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreAudienceLevel">
+    <field>
+      <xsl:attribute name="name">pbcore.audienceLevel</xsl:attribute>
+      <xsl:value-of select="pbcore:audienceLevel"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreAudienceRating">
+    <field>
+      <xsl:attribute name="name">pbcore.audienceRating</xsl:attribute>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreCreator">
+    <field>
+      <xsl:attribute name="name">pbcore.creator_<xsl:value-of select="translate(pbcore:creatorRole, ' ', '_')"/>
+      </xsl:attribute>
+      <xsl:value-of select="pbcore:creator"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreContributor">
+    <field>
+      <xsl:attribute name="name">pbcore.contributor_<xsl:value-of select="translate(pbcore:contributorRole, ' ', '_')"/>
+      </xsl:attribute>
+      <xsl:value-of select="pbcore:contributor"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcorePublisher">
+    <field>
+      <xsl:attribute name="name">pbcore.publisher_<xsl:value-of select="translate(pbcore:publisherRole, ' ', '_')"/>
+      </xsl:attribute>
+      <xsl:value-of select="pbcore:publisher"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//pbcore:pbcoreRightsSummary">
+    <field>
+      <xsl:attribute name="name">pbcore.rightsSummary</xsl:attribute>
+      <xsl:value-of select="pbcore:rightsSummary"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="tei:TEI">
+    <xsl:apply-templates select="//tei:keywords[contains(@scheme, 'merlot.org/merlot/categories.htm')]/tei:term"/>
+    <xsl:apply-templates select="//tei:name[@type='person' and generate-id() = generate-id(key('teiUniq', @ref)[1])]"/>
+    <xsl:apply-templates select="//tei:name[@type='org' and generate-id() = generate-id(key('teiUniq', @ref)[1])]"/>
+    <xsl:apply-templates select="//tei:name[@type='place' and generate-id() = generate-id(key('teiUniq', @ref)[1])]"/>
+    <xsl:apply-templates select="//tei:name[not(@type) and generate-id() = generate-id(key('teiUniq', @ref)[1])]"/>
+    <field name="fulltext">
+      <xsl:value-of select="."/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//tei:term">
+    <xsl:call-template name="output-tokens">
+      <xsl:with-param name="list">
+        <xsl:value-of select="."/>
+      </xsl:with-param>
+      <xsl:with-param name="delimiter">--</xsl:with-param>
+      <xsl:with-param name="name">dc.subject</xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
+  <xsl:template match="//tei:name">
+    <field>
+      <xsl:attribute name="name">pbcore.subject</xsl:attribute>
+      <xsl:value-of select="normalize-space(key('teiRef', substring(@ref,2)))"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//tei:name[@type='person']">
+    <field>
+      <xsl:attribute name="name">pbcore.contributor_Subject</xsl:attribute>
+      <xsl:value-of select="normalize-space(key('teiRef', substring(@ref,2)))"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//tei:name[@type='org']">
+    <field>
+      <xsl:attribute name="name">pbcore.contributor_Subject</xsl:attribute>
+      <xsl:value-of select="normalize-space(key('teiRef', substring(@ref,2)))"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="//tei:name[@type='place']">
+    <field>
+      <xsl:attribute name="name">pbcore.coverage_Spatial</xsl:attribute>
+      <xsl:value-of select="normalize-space(key('teiRef', substring(@ref,2)))"/>
+    </field>
+  </xsl:template>
+  <xsl:template match="*"/>
+  <xsl:template name="output-tokens">
+    <xsl:param name="list"/>
+    <xsl:param name="delimiter"/>
+    <xsl:param name="name"/>
+    <xsl:param name="r"/>
+    <xsl:variable name="newlist">
+      <xsl:choose>
+        <xsl:when test="contains($list, $delimiter)">
+          <xsl:value-of select="normalize-space($list)"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="concat(normalize-space($list), $delimiter)"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="first" select="substring-before($newlist, $delimiter)"/>
+    <xsl:variable name="r1">
+      <xsl:choose>
+        <xsl:when test="string($r)">
+          <xsl:value-of select="concat($r, ' ', $delimiter, ' ', normalize-space($first))"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$first"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="remaining" select="substring-after($newlist, $delimiter)"/>
+    <field>
+      <xsl:attribute name="name">
+        <xsl:value-of select="$name"/>
+      </xsl:attribute>
+      <xsl:value-of select="normalize-space($r1)"/>
+    </field>
+    <xsl:if test="$remaining">
+      <xsl:call-template name="output-tokens">
+        <xsl:with-param name="r" select="$r1"/>
+        <xsl:with-param name="list" select="$remaining"/>
+        <xsl:with-param name="name" select="$name"/>
+        <xsl:with-param name="delimiter">
+          <xsl:value-of select="$delimiter"/>
+        </xsl:with-param>
+      </xsl:call-template>
+    </xsl:if>
+  </xsl:template>
+</xsl:stylesheet>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="WSDL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="WSDL.0" LABEL="WSDL Bindings" CREATED="2010-01-08T14:38:43.863Z" MIMETYPE="text/xml" FORMAT_URI="http://schemas.xmlsoap.org/wsdl/" SIZE="5704">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="bmech" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CONCEPT SDep" targetNamespace="bmech">
+  <wsdl:types>
+    <xsd:schema targetNamespace="bmech">
+      <xsd:simpleType name="XMLType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getPBCoreRequest">
+    <wsdl:part name="RELS-EXT" type="this:XMLType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParentRequest">
+    <wsdl:part name="RELS-EXT" type="this:XMLType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDCRequest">
+    <wsdl:part name="RELS-EXT" type="this:XMLType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRightsRequest">
+    <wsdl:part name="Rights" type="this:XMLType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSolrXMLRequest">
+    <wsdl:part name="RELS-EXT" type="this:XMLType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="dissemResponse">
+    <wsdl:part name="dissem" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="FedoraSaxonPortType">
+    <wsdl:operation name="DC">
+      <wsdl:input message="this:getDCRequest"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBCore">
+      <wsdl:input message="this:getPBCoreRequest"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Parent">
+      <wsdl:input message="this:getParentRequest"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RawDC">
+      <wsdl:input message="this:getDCRequest"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RawPBCore">
+      <wsdl:input message="this:getPBCoreRequest"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rights">
+      <wsdl:input message="this:getRightsRequest"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SolrXML">
+      <wsdl:input message="this:getSolrXMLRequest"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="FedoraSaxon">
+    <wsdl:port binding="this:FedoraSaxon_http" name="FedoraSaxon_port">
+      <http:address location=""></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="FedoraSaxon_http" type="this:FedoraSaxonPortType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="PBCore">
+      <http:operation location="http://local.fedora.server/saxon/SaxonServlet?source=(RELS-EXT)&amp;style=http%3A%2F%2Flocalhost%3A8180%2Ffedora%2Fget%2Fwgbh:CONCEPT%2Fto_pbcore.xsl"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Parent">
+      <http:operation location="http://local.fedora.server/saxon/SaxonServlet?source=(RELS-EXT)&amp;style=http%3A%2F%2Flocalhost%3A8180%2Fsample%2Fget_parent_pbcore.xsl"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DC">
+      <http:operation location="http://local.fedora.server/saxon/SaxonServlet?source=(RELS-EXT)&amp;style=http%3A%2F%2Flocalhost%3A8180%2Ffedora%2Fget%2Fwgbh:CONCEPT%2Fto_dc.xsl"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RawPBCore">
+      <http:operation location="(PBCore)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RawDC">
+      <http:operation location="(DC)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rights">
+      <http:operation location="(Rights)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SolrXML">
+      <http:operation location="http://local.fedora.server/saxon/SaxonServlet?source=(RELS-EXT)&amp;style=http%3A%2F%2Flocalhost%3A8180%2Ffedora%2Fget%2Fwgbh:MediaMetadataImpl%2Fto_solr.xsl"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="text/xml"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>

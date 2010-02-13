@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="wgbh:ThumbnailImpl"
+xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Concept Service Deployment"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2008-08-07T20:53:20.152Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-01-06T18:32:59.523Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2008-08-07T20:53:20.152Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="397">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Concept Service Deployment</dc:title>
+  <dc:identifier>wgbh:ThumbnailImpl</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DSINPUTSPEC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="DSINPUTSPEC.1" LABEL="Datastream Input Specification" CREATED="2008-08-14T17:16:15.562Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSInputSpec-1.0" SIZE="464">
+<foxml:xmlContent>
+<fbs:DSInputSpec xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec" bDefPID="sdef:THUMBNAIL" label="Datastream Input Specification for Concept">
+          <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="RELS-EXT">
+            <fbs:DSInputLabel>RELS-EXT</fbs:DSInputLabel>
+            <fbs:DSMIME>text/xml</fbs:DSMIME>
+            <fbs:DSInputInstruction></fbs:DSInputInstruction>
+          </fbs:DSInput>
+        </fbs:DSInputSpec>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="RELS-EXT.1" LABEL="RDF Statements about this object" CREATED="2008-11-04T18:29:04.594Z" MIMETYPE="application/rdf+xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="910">
+<foxml:xmlContent>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/wgbh:ThumbnailImpl">
+    <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"></hasModel>
+    <isDeploymentOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/sdef:THUMBNAIL"></isDeploymentOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:CONCEPT"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:VIDEO"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:AUDIO"></isContractorOf>
+    <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/wgbh:DOCUMENT"></isContractorOf>
+  </rdf:Description>
+</rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="WSDL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="WSDL.1" LABEL="WSDL Bindings" CREATED="2010-01-06T18:31:00.505Z" MIMETYPE="text/xml" FORMAT_URI="http://schemas.xmlsoap.org/wsdl/" SIZE="3692">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="bmech" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CONCEPT SDep" targetNamespace="bmech">
+  <wsdl:types>
+    <xsd:schema targetNamespace="bmech">
+      <xsd:simpleType name="RELSType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PIDType">
+        <xsd:restriction base="xsd:string"></xsd:restriction>
+      </xsd:simpleType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getThumbnail">
+    <wsdl:part name="mypid" type="this:PIDType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPreview">
+    <wsdl:part name="mypid" type="this:PIDType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLarge">
+    <wsdl:part name="mypid" type="this:PIDType"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="dissemResponse">
+    <wsdl:part name="dissem" type="xsd:base64Binary"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="FEDORAPortType">
+    <wsdl:operation name="get">
+      <wsdl:input message="this:getThumbnail"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="thumbnail">
+      <wsdl:input message="this:getThumbnail"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="preview">
+      <wsdl:input message="this:getPreview"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="large">
+      <wsdl:input message="this:getLarge"></wsdl:input>
+      <wsdl:output message="this:dissemResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="Fedora">
+    <wsdl:port binding="this:FEDORA_http" name="FEDORA_port">
+      <http:address location="http://local.fedora.server/"></http:address>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:binding name="FEDORA_http" type="this:FEDORAPortType">
+    <http:binding verb="GET"></http:binding>
+    <wsdl:operation name="get">
+      <http:operation location="media/Thumbnail.py?size=thumbnail&amp;pid=(mypid)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="image/jpg"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="thumbnail">
+      <http:operation location="media/Thumbnail.py?size=thumbnail&amp;pid=(mypid)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="image/jpg"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="preview">
+      <http:operation location="media/Thumbnail.py?size=preview&amp;pid=(mypid)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="image/jpg"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="large">
+      <http:operation location="media/Thumbnail.py?size=large&amp;pid=(mypid)"></http:operation>
+      <wsdl:input>
+        <http:urlReplacement></http:urlReplacement>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content type="image/jpg"></mime:content>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="METHODMAP" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="METHODMAP.1" LABEL="Deployment Method Map" CREATED="2010-01-06T18:32:59.523Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDepMethodMap-1.0">
+<foxml:xmlContent>
+<fmm:MethodMap bDefPID="sdef:THUMBNAIL" name="MethodMap - CONCEPT" xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap">
+  <fmm:Method operationLabel="Get Thumbnail" operationName="get" wsdlMsgName="getThumbnail" wsdlMsgOutput="dissemResponse">
+    <fmm:DefaultInputParm defaultValue="$PID" label="fedora object PID" parmName="mypid" passBy="VALUE" required="true"/>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpg"/>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Thumbnail" operationName="thumbnail" wsdlMsgName="getThumbnail" wsdlMsgOutput="dissemResponse">
+    <fmm:DefaultInputParm defaultValue="$PID" label="fedora object PID" parmName="mypid" passBy="VALUE" required="true"/>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpg"/>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Preview" operationName="preview" wsdlMsgName="getPreview" wsdlMsgOutput="dissemResponse">
+    <fmm:DefaultInputParm defaultValue="$PID" label="fedora object PID" parmName="mypid" passBy="VALUE" required="true"/>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpg"/>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Large" operationName="large" wsdlMsgName="getLarge" wsdlMsgOutput="dissemResponse">
+    <fmm:DefaultInputParm defaultValue="$PID" label="fedora object PID" parmName="mypid" passBy="VALUE" required="true"/>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpg"/>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Full" operationName="full" wsdlMsgName="getFull" wsdlMsgOutput="dissemResponse">
+    <fmm:DefaultInputParm defaultValue="$PID" label="fedora object PID" parmName="mypid" passBy="VALUE" required="true"/>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpg"/>
+  </fmm:Method>
+  <fmm:Method operationLabel="Get Small" operationName="small" wsdlMsgName="getSmall" wsdlMsgOutput="dissemResponse">
+    <fmm:DefaultInputParm defaultValue="$PID" label="fedora object PID" parmName="mypid" passBy="VALUE" required="true"/>
+    <fmm:MethodReturnType wsdlMsgName="dissemResponse" wsdlMsgTOMIME="image/jpg"/>
+  </fmm:Method>
+</fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>
